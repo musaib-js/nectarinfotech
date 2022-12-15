@@ -28,7 +28,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['nectar-infotech.herokuapp.com', 'nectarinfotech.in', 'www.nectarinfotech.in', '127.0.0.0.1:8000']
+ALLOWED_HOSTS = ['*']
 #ALLOWED_HOSTS = []
 
 
@@ -87,19 +87,8 @@ WSGI_APPLICATION = 'nectar.wsgi.application'
 #     }
 # }
 
-if os.getenv('GITHUB_WORKFLOW'):
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql',
-            'NAME': 'github-actions',
-            'USER': 'postgres',
-            'PASSWORD': 'postgres',
-            'HOST': 'localhost',
-            'PORT': '5432'
-        }
-    }
-else:
-    DATABASES={
+
+DATABASES={
    'default':{
       'ENGINE':'django.db.backends.postgresql_psycopg2',
       'NAME':os.getenv('POSTGRESNAME'),
