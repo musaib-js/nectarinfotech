@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>Nectar InfoTech</title>
+    <link rel="stylesheet" type="text/css" href="/static/assets/css2/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="/static/assets/css2/font-awesome.css">
+
+    <link rel="stylesheet" href="/static/assets/css2/templatemo-lava.css">
+
+    <link rel="stylesheet" href="/static/assets/css2/owl-carousel.css">
+    <link rel="shortcut icon" href="/static/assets/img/5.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="/" class="logo">
+                            <img  width="120" src='/static/assets/img/3.png'>
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="#welcome" class="menu-item">Home</a></li>
+                            <li class="scroll-to-section"><a href="#about" class="menu-item">About</a></li>
+                            <li class="scroll-to-section"><a href="#testimonials" class="menu-item">Testimonials</a>
+                            </li>
+                            <li class="scroll-to-section"><a href="#clients" class="menu-item">Clients</a></li>
+                            <li class="scroll-to-section"><a href="#contact-us" class="menu-item">Contact Us</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Welcome Area Start ***** -->
+    <div class="welcome-area" id="welcome">
+        <!-- ***** Header Text Start ***** -->
+        <div class="header-text">
+            <div class="container">
+                <div class="row">
+                    <div class="left-text col-lg-6 col-md-12 col-sm-12 col-xs-12" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                        {% for message in messages  %}            
+        <div class="alert alert-{{ message.tags }} alert-dismissible fade show" style = "background-color: #FC3; color: white;" role="alert">
+              <strong>Message : </strong> {{ message }}
+              <button type="button" class="btn closealert" style = "background-color: white;" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true" class = "closealert">&times;</span>
+              </button>
+            </div>
+        {% endfor %} 
+                        <h1>Simple App that we <em>CREATE</em></h1>
+                        <p> Nectar InfoTech is a digital marketing agency providing services as Web Development, App Development (Android and Cross-Platform), Graphic Designing and Digital Marketing.
+                        </p>
+                        <a href="#about" class="main-button-slider">KNOW US BETTER</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ***** Header Text End ***** -->
+    </div>
+    <!-- ***** Welcome Area End ***** -->
+
+    <!-- ***** Features Big Item Start ***** -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <h2>01</h2>
+                            <img src="/static/assets/images2/features-icon-1.png" alt="">
+                            <h4>Web and App Development</h4>
+                            <p>Curabitur pulvinar vel odio sed sagittis. Nam maximus ex diam, nec consectetur diam.</p>
+                            <a href="#testimonials" class="main-button">
+                                Contact Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <h2>02</h2>
+                            <img src="/static/assets/images2/features-icon-2.png" alt="">
+                            <h4>Search Engine Optimisation</h4>
+                            <p>Curabitur pulvinar vel odio sed sagittis. Nam maximus ex diam, nec consectetur diam.</p>
+                            <a href="#testimonials" class="main-button">
+                                Contact Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <h2>03</h2>
+                            <img src="/static/assets/images2/features-icon-3.png" alt="">
+                            <h4>Digital Marketing & Graphic Designing</h4>
+                            <p>Curabitur pulvinar vel odio sed sagittis. Nam maximus ex diam, nec consectetur diam.</p>
+                            <a href="#testimonials" class="main-button">
+                                Contact Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Features Big Item End ***** -->
+
+    <div class="left-image-decor"></div>
+
+    <!-- ***** Features Big Item Start ***** -->
+    <section class="section" id="promotion">
+        <div class="container">
+            <div class="row">
+                <div class="left-image col-lg-5 col-md-12 col-sm-12 mobile-bottom-fix-big" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <img src="/static/assets/images2/left-image.png" class="rounded img-fluid d-block mx-auto" alt="App">
+                </div>
+                <div class="right-text offset-lg-1 col-lg-6 col-md-12 col-sm-12 mobile-bottom-fix">
+                    <ul>
+                        <li data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                            <img src="/static/assets/images2/about-icon-01.png" alt="">
+                            <div class="text">
+                                <h4>Who are we?</h4>
+                                <p>With our slogan, 'Let the Tech define you and your existence', we are aimed at digitizing the world.</p>
+                            </div>
+                        </li>
+                        <li data-scroll-reveal="enter right move 30px over 0.6s after 0.5s">
+                            <img src="/static/assets/images2/about-icon-02.png" alt="">
+                            <div class="text">
+                                <h4>How to reach us?</h4>
+                                <p>Want to avail our services? Don't worry, just fill the <a href="#contact">contact form</a> and we'll get back to you ASAP!</p </div>
+                        </li>
+                        <li data-scroll-reveal="enter right move 30px over 0.6s after 0.6s">
+                            <img src="/static/assets/images2/about-icon-03.png" alt="">
+                            <div class="text">
+                                <h4>What type of apps have we developed?</h4>
+                                <p>We've developed apps for ed-tech clients, various business and job consultants, different events and some institutions also.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- ***** Features Big Item End ***** -->
+
+    <div class="right-image-decor"></div>
+
+    <!-- ***** Testimonials Starts ***** -->
+    <section class="section" id="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="center-heading">
+                        <h2>What They Think <em>About Us</em></h2>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-12 col-sm-12 mobile-bottom-fix-big" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <div class="owl-carousel owl-theme">
+                        {% for t in testimonials  %}
+                        <div class="item service-item">
+                            <div class="author">
+                                <i><img src="/static/assets/img/user.png" alt="Author One"></i>
+                            </div>
+                            <div class="testimonial-content">
+                                <ul class="stars">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                                <h4>{{t.name}}</h4>
+                                <p>{{t.message}}</p>
+                                <span>Owner</span>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Testimonials Ends ***** -->
+    <div class="left-image-decor"></div>
+    {% comment %} Clients Section Start {% endcomment %}
+    <section class="section" id="testimonials">
+        <div class="container" id = "clients">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="center-heading">
+                        <h2><em>Clients</em> we've Served</h2>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-12 col-sm-12 mobile-bottom-fix-big" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item service-item">
+                               <a href = "https://mirchalsirstutorials.com"> <img src="/static/assets/img/logomir.svg" height = "250px"></a>
+                        </div>
+                        <div class="item service-item">
+                            <a href = "https://pilf.in">  <img src="/static/assets/img/pilf.png" height = "250px"></a>
+                        </div>
+                        <div class="item service-item">
+                                <img src="/static/assets/img/logoblack.png" height = "250px">
+                        </div>
+                        <div class="item service-item">
+                                <img src="/static/assets/img/logoget.jpeg" height = "250px">
+                        </div>
+                        <div class="item service-item">
+                                <img src="/static/assets/img/disha.png" height = "250px">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ***** Footer Start ***** -->
+    <footer id="contact-us">
+        <div class="container">
+            <div class="footer-content">
+                <div class="row">
+                    <!-- ***** Contact Form Start ***** -->
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="contact-form">
+                            <form id="contact" action="/contact/" method="post">
+                                {% csrf_token %}
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12">
+                                        <fieldset>
+                                            <input name="name" type="text" id="name" placeholder="Full Name" required="" style="background-color: rgba(250,250,250,0.3);">
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <fieldset>
+                                            <input name="phone" type="text" id="email" placeholder="Phone Number" required="" style="background-color: rgba(250,250,250,0.3);">
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <fieldset>
+                                            <textarea name="message" rows="6" id="message" placeholder="Your Message" required="" style="background-color: rgba(250,250,250,0.3);"></textarea>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <fieldset>
+                                            <button type="submit" id="form-submit" class="main-button">Send Message
+                                                Now</button>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- ***** Contact Form End ***** -->
+                    <div class="right-content col-lg-6 col-md-12 col-sm-12">
+                        <h3><em>Nectar InfoTech</em></h3>
+                        <p>We at Nectar InfoTech aim to provide seamless services of Web Development, App Development (Cross Platform and Native) and Digital Marketing services like SEO and 
+                            promotions etc. Our post-service support is always praised by our clients.
+                        </p>
+                        <ul class="social">
+                            <li><a href="https://instagram.com/nectar_infotech"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="sub-footer">
+                        <p>Copyright &copy; 2022 | Nectar InfoTech</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="/static/assets/js2/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="/static/assets/js2/popper.js"></script>
+    <script src="/static/assets/js2/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="/static/assets/js2/owl-carousel.js"></script>
+    <script src="/static/assets/js2/scrollreveal.min.js"></script>
+    <script src="/static/assets/js2/waypoints.min.js"></script>
+    <script src="/static/assets/js2/jquery.counterup.min.js"></script>
+    <script src="/static/assets/js2/imgfix.min.js"></script>
+
+    <!-- Global Init -->
+    <script src="/static/assets/js2/custom.js"></script>
+
+</body>
+
+</html>

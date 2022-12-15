@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Nectar InfoTech</title>
+    <link rel="stylesheet" href="/static/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="/static/assets/img/2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="/static/assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="/static/assets/css/Features-Boxed.css">
+    <link rel="stylesheet" href="/static/assets/css/Footer-Clean.css">
+    <link rel="stylesheet" href="/static/assets/css/Header-Blue.css">
+    <link rel="stylesheet" href="/static/assets/css/Registration-Form-with-Photo.css">
+    <link rel="stylesheet" href="/static/assets/css/styles.css">
+    <link rel="stylesheet" href="/static/assets/css/Team-Boxed.css">
+</head>
+
+<body>
+    <header class="header-blue">
+        <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="/static/assets/img/2.png" width="50" height="50"> Nectar InfoTech</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a>
+                        <li class="nav-item"><a class="nav-link" href="#team">Team</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex me-auto navbar-form" target="_self">
+                        <div class="d-flex align-items-center"><label class="form-label d-flex mb-0" for="search-field"><i class="fa fa-search"></i></label><input class="form-control search-field" type="search" id="search-field" name="search"></div>
+                    </form></span><a class="btn btn-light action-button" role="button" href="#contactus">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+        {% for message in messages  %}            
+      <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+            <strong>Message : </strong> {{ message }}
+            <button type="button" class="btn btn-dark closealert" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true" class = "closealert">&times;</span>
+            </button>
+          </div>
+      {% endfor %} 
+        <div class="container hero">
+            <div class="row">
+                <div class="col-12 col-lg-6 col-xl-5 offset-xl-1">
+                    <h1>The revolution is here.</h1>
+                    <p>With our slogan, 'Let the Tech define you and your existence', we are aiemd at bringing a tech revolution in Kashmir. Ours is an actual tech startup rather than a copy-paste startup. </p><a href = "#services" class="btn btn-light action-button" role="button">Services Offered</a>
+                </div>
+                <div class="col-md-5 col-lg-5 offset-lg-1 offset-xl-0 d-none d-lg-block phone-holder">
+                    <div class="phone-mockup"><img class="device" src="/static/assets/img/phone.svg">
+                        <div class="screen"></div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <section class="features-boxed" id = "services">
+            <div class="container">
+                <div class="intro">
+                    <h2 class="text-center">Services Offered </h2>
+                    <p class="text-center"> Hang On! Want to know about the services we offer. You're at the right place.</p>
+                </div>
+                <div class="row justify-content-center features">
+                    <div class="col-sm-6 col-md-5 col-lg-4 item">
+                        <div class="box"><i class="fa fa-code icon"></i>
+                            <h3 class="name">Web Development</h3>
+                            <p class="description">We are in the tech age and we should use the tech to expand our business. So, tell us your idea and we will take you live upon the servers.</p><a class="learn-more" href="#contactus">Contact Us »</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-5 col-lg-4 item">
+                        <div class="box"><i class="fa fa-android icon"></i>
+                            <h3 class="name">Android Development</h3>
+                            <p class="description">It's the age of apps. Even this time you're either using chrome or firefox. So, use this app-trend to expand your business across the globe.</p><a class="learn-more" href="#contactus">Contact Us »</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-5 col-lg-4 item">
+                        <div class="box"><i class="fa fa-briefcase icon"></i>
+                            <h3 class="name">Marketing </h3>
+                            <p class="description">Is your business stuck. Come to us and we'll set your business right back on the track. We've business coaches to lead you ahead.</p><a class="learn-more" href="#contactus">Contact Us »</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team-boxed" id = "team">
+            <div class="container">
+                <div class="intro">
+                    <h2 class="text-center">Team </h2>
+                    <p class="text-center">Meet the minds behind Nectar InfoTech.</p>
+                </div>
+                <div class="row people">
+                    <div class="col-md-6 col-lg-4 item">
+                        <div class="box"><img class="rounded-circle" src="/static/assets/img/mus.JPG">
+                            <h3 class="name">Musaib Altaf</h3>
+                            <p class="title">Founder and CEO</p>
+                            <p class="description">Musaib is an engineering undergraduate at IIIT Bhubaneshwar. He is the owner, founder and the CEO of Nectar InfoTech. With his vision to bring about a tech revolution, he started Nectar InfoTech in 2021. </p>
+                            <div class="social"><a href="https://facebook.com/musaibaltafurahman"><i class="fa fa-facebook-official"></i></a><a href="https://twitter.com/Musaibaltaf6"><i class="fa fa-twitter"></i></a><a href="https://instagram.com/mu.saibaltaf6"><i class="fa fa-instagram"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 item">
+                        <div class="box"><img class="rounded-circle" src="/static/assets/img/shourya.jpeg">
+                            <h3 class="name">Shourya Garg</h3>
+                            <p class="title">Android Developer</p>
+                            <p class="description">Shourya is an engineering undergraduate at IIIT Bhubaneshwar. He is a passionate android application developer and is currently leading the android development team of Nectar InfoTech. </p>
+                            <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 item">
+                        <div class="box"><img class="rounded-circle" src="/static/assets/img/ragini.jpeg">
+                            <h3 class="name">Ragini Sharma</h3>
+                            <p class="title">Front-End Developer</p>
+                            <p class="description">Ragini is an engineering undergraduate at IIIT Bhubaneshwar. She's a passionate front-end developer and has got a good experience in designing cool UI of the websites.  </p>
+                            <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 item">
+                        <div class="box"><img class="rounded-circle" src="/static/assets/img/lopa.jpeg">
+                            <h3 class="name">Lopamudra Mallick</h3>
+                            <p class="title">Front-End Developer</p>
+                            <p class="description">Lopa too is an engineering graduate at IIIT Bhubaneshwar. She is pretty good a designing a catchy and cool User Interfaces for different websites. She's developed UIs for many sites.</p>
+                            <div class="social"><a href="https://facebook.com/musaibaltafurahman"><i class="fa fa-facebook-official"></i></a><a href="https://twitter.com/Musaibaltaf6"><i class="fa fa-twitter"></i></a><a href="https://instagram.com/mu.saibaltaf6"><i class="fa fa-instagram"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 item">
+                        <div class="box"><img class="rounded-circle" src="/static/assets/img/aditi.jpeg">
+                            <h3 class="name">Aditi Rout</h3>
+                            <p class="title">Graphic Designer</p>
+                            <p class="description">Aditi is also an engineering undergraduate at IIIT Bhubaneshwar. She's a damn good graphic designer and a team manager too. Her designs have been featured on many sites and books. </p>
+                            <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 item">
+                        <div class="box"><img class="rounded-circle" src="/static/assets/img/amisha.jpeg">
+                            <h3 class="name">Amisha Panda</h3>
+                            <p class="title">Android Developer</p>
+                            <p class="description">Amisha is an android developer at Nectar InfoTech and is an engineering undergraduate at IIIT Bhubaneshwar. She's accomplished various android projects. You can reach her on  </p>
+                            <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="register-photo" id = "contactus">
+            <div class="form-container">
+                <div class="image-holder"></div>
+                <form method="post" action = "/contact/">
+                    <h2 class="text-center"><strong>Contact</strong> Nectar</h2>
+                    <div class="mb-3"><input class="form-control" type="name" name="name" placeholder="Your Name Here"></div>
+                    <div class="mb-3"><input class="form-control" type="phone" name="phone" placeholder="Phone Here"></div>
+                    <div class="mb-3"><input class="form-control" type="text" name="subject" placeholder="Subject"></div>
+                    <div class="mb-3"><textarea class="form-control" type="text" rows="4" cols="50" name="message" placeholder = "Message Here"></textarea></div>
+                    <div class="mb-3">
+                        <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="checkbox">I agree to the license terms.</label></div>
+                    </div>
+                    {% csrf_token %}
+                    <div class="mb-3"><button class="btn btn-dark d-block w-100" type="submit">Contact Us</button></div><a class="already" href="#">We'll Get Back To You Soon</a>
+                </form>
+            </div>
+        </section>
+        <footer class="footer-clean">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">App Development</a></li>
+                            <li><a href="#">Marketing</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Who are we?</h3>
+                        <ul>
+                            <li><a href="#">A Tech Starup</a></li>
+                            <li><a href="#">A Techie Team</a></li>
+                            <li><a href="#">Tech Revolutionaries</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Careers</h3>
+                        <ul>
+                            <li><a href="#">Web Developers</a></li>
+                            <li><a href="#">App Developers</a></li>
+                            <li><a href="#">Marketing Interns</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 item social"><a href="https://instagram.com/nectar_infotech"><i class="icon ion-social-facebook"></i></a><a href="https://instagram.com/nectar_infotech"><i class="icon ion-social-twitter"></i></a><a href="https://instagram.com/nectar_infotech"><i class="icon ion-social-snapchat"></i></a><a href="https://instagram.com/nectar_infotech"><i class="icon ion-social-instagram"></i></a>
+                        <p class="copyright">Nectar InfoTech © 2021</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </header>
+    <script src="/static/assets/bootstrap/js/bootstrap.min.js"></script>
+      <script>
+        var alert = document.getElementsByClassName("alert")[0];
+        var spanclose = document.getElementsByClassName("closealert")[0];
+        // When the user clicks on <span> (x), close the modal
+        spanclose.onclick = function() {
+            alert.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
