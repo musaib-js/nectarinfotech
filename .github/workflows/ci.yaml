@@ -1,4 +1,4 @@
-name: Django CI
+name: CI/CD with Django, Postgres and Digital Ocean
 
 on:
   push:
