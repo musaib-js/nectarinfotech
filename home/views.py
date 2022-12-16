@@ -28,3 +28,6 @@ def contact(request):
 
 def clients(request):
     return render(request, 'clients.html')
+
+def error_404_view(request, exception):
+    return render(request, '404.html')
